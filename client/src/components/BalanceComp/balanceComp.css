@@ -1,0 +1,24 @@
+.box {
+  display: flex;
+  border: 1px solid grey;
+  width: 264px;
+  height: 56px;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px grey;
+}
+
+.balImg {
+  object-fit: contain;
+  width: 34.67px;
+  height: 26px;
+}
+.leftBal {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  padding: 20px;
+}

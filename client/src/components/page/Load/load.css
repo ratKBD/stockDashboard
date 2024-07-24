@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: end;
+}
+
+.borderBox {
+  border: 1px solid #0000003b;
+  border-radius: 6px;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.gap {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

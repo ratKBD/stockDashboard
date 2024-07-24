@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "company1s",
+  "info": {
+    "singularName": "company1",
+    "pluralName": "company1s",
+    "displayName": "company1",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "companies": {
+      "type": "json"
+    }
+  }
+}

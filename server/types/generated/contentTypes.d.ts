@@ -362,67 +362,6 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
   };
 }
 
-export interface ApiCompany1Company1 extends Schema.CollectionType {
-  collectionName: 'company1s';
-  info: {
-    singularName: 'company1';
-    pluralName: 'company1s';
-    displayName: 'company1';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    companies: Attribute.JSON;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::company1.company1',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::company1.company1',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiTestApiTestApi extends Schema.CollectionType {
-  collectionName: 'test_apis';
-  info: {
-    singularName: 'test-api';
-    pluralName: 'test-apis';
-    displayName: 'testApi';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    test1: Attribute.String;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::test-api.test-api',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::test-api.test-api',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 export interface PluginUploadFile extends Schema.CollectionType {
   collectionName: 'files';
   info: {
@@ -849,6 +788,67 @@ export interface PluginI18NLocale extends Schema.CollectionType {
   };
 }
 
+export interface ApiCompany1Company1 extends Schema.CollectionType {
+  collectionName: 'company1s';
+  info: {
+    singularName: 'company1';
+    pluralName: 'company1s';
+    displayName: 'company1';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    companies: Attribute.JSON;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::company1.company1',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::company1.company1',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiTestApiTestApi extends Schema.CollectionType {
+  collectionName: 'test_apis';
+  info: {
+    singularName: 'test-api';
+    pluralName: 'test-apis';
+    displayName: 'testApi';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    test1: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::test-api.test-api',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::test-api.test-api',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -859,8 +859,6 @@ declare module '@strapi/types' {
       'admin::api-token-permission': AdminApiTokenPermission;
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
-      'api::company1.company1': ApiCompany1Company1;
-      'api::test-api.test-api': ApiTestApiTestApi;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::content-releases.release': PluginContentReleasesRelease;
@@ -869,6 +867,8 @@ declare module '@strapi/types' {
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'plugin::i18n.locale': PluginI18NLocale;
+      'api::company1.company1': ApiCompany1Company1;
+      'api::test-api.test-api': ApiTestApiTestApi;
     }
   }
 }

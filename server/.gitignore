@@ -113,5 +113,3 @@ dist
 build
 .strapi-updater.json
 .strapi-cloud.json
-# path: ./.gitignore
-package-lock.json
